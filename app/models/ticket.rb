@@ -1,6 +1,9 @@
 class Ticket < ActiveRecord::Base
-  belongs_to :user
-  belongs_to :event
+	has_many :tickets, dependent: :destroy
+	belongs_to :owner, class_name: 'User'
 
-  validates :comment, length: { maximum: 30 }, allow_blank: true
+	belongs_to :user
+	belongs_to :event
+
+	validates :comment, length: { maximum: 30 }, allow_blank: true
 end
