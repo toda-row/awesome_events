@@ -6836,3 +6836,113 @@ Processing by WelcomeController#index as HTML
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:40:39.168261')
   Rendered welcome/index.html.erb within layouts/application (94.5ms)
 Completed 200 OK in 132ms (Views: 127.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 14:43:42 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 135ms (Views: 105.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 14:45:02 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vt96VuVyr9NzpV7HmlMcCEDGCyL6PZXsGnekK5gpvxGbejOBaVYZMa57bMhQiAYXiTloAJlMPAIaYSCd32QWkg==", "event"=>{"name"=>"ハッカソンtest", "place"=>"おおみや", "event_image"=>#<ActionDispatch::Http::UploadedFile:0x007fa6e186ba48 @tempfile=#<Tempfile:/var/folders/cb/5rhzy8557gj69kfbzj4q2khm0000gn/T/RackMultipart20160929-675-jz3ec3.png>, @original_filename="スクリーンショット 2016-09-29 14.44.16.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"event[event_image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2016-09-29 14.44.16.png\"\r\nContent-Type: image/png\r\n">, "event_image_cache"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"14", "start_time(5i)"=>"43", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"29", "end_time(4i)"=>"14", "end_time(5i)"=>"43", "content"=>"yes"}, "commit"=>"作成"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("name", "place", "event_image", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "ハッカソンtest"], ["place", "おおみや"], ["event_image", "__________2016-09-29_14.44.16.png"], ["content", "yes"], ["start_time", "2016-10-29 05:43:00.000000"], ["end_time", "2016-11-29 05:43:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 05:45:02.351332"], ["updated_at", "2016-09-29 05:45:02.351332"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/19
+Completed 302 Found in 216ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/events/19" for ::1 at 2016-09-29 14:45:02 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.3ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 19]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.3ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 19]]
+  Rendered events/show.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 145ms (Views: 115.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 14:50:21 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (1.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:21.304717')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:21.304717')
+  Rendered welcome/index.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 144ms (Views: 137.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?page=2" for ::1 at 2016-09-29 14:50:25 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:25.623744')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:25.623744')
+  Rendered welcome/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 14:50:29 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:29.011127')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:29.011127')
+  Rendered welcome/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 91ms (Views: 86.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?page=2" for ::1 at 2016-09-29 14:50:32 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:32.583386')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:32.583386')
+  Rendered welcome/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 14:50:37 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:37.667069')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:37.667069')
+  Rendered welcome/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 92ms (Views: 86.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?page=2" for ::1 at 2016-09-29 14:50:45 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:45.674852')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:45.674852')
+  Rendered welcome/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 88ms (Views: 81.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 14:50:49 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:49.463358')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:50:49.463358')
+  Rendered welcome/index.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 86ms (Views: 83.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/18" for ::1 at 2016-09-29 14:56:51 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.2ms)[0m  [1mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1[0m  [["user_id", 2], ["event_id", 18]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC[0m  [["event_id", 18]]
+  Rendered events/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/18/edit" for ::1 at 2016-09-29 14:56:54 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1[0m  [["owner_id", 2], ["id", 18]]
+  Rendered events/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 1.1ms)
