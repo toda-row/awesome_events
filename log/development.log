@@ -5357,3 +5357,875 @@ Processing by ApplicationController#error404 as HTML
   Parameters: {"path"=>"ttt"}
   Rendered application/error404.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:30:11 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.7ms)[0m  SELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:30:12.201628')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  Rendered welcome/index.html.erb within layouts/application (48.1ms)
+undefined method `pagenate' for #<#<Class:0x007f812a782a78>:0x007f812a7702b0>
+Did you mean?  paginate¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:18:in `_app_views_welcome_index_html_erb___923339190986181937_70096379506000'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:145:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:166:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:333:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:143:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:14:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:46:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:27:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:100:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/streaming.rb:217:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:83:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:32:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/renderers.rb:37:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/rendering.rb:25:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:16:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:43:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:198:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:10:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:117:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:505:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:92:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:19:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rescue.rb:29:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:137:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:30:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:196:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:237:in `block in action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:43:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `each'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:817:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:186:in `call!'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/builder.rb:63:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/flash.rb:260:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/query_cache.rb:36:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/migration.rb:377:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:88:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/reloader.rb:73:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:38:in `call_app'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:26:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/static.rb:120:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/engine.rb:518:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/application.rb:165:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendered application/error500.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 516ms (Views: 405.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:34:18 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.8ms)[0m  SELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:34:18.377765')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  Rendered welcome/index.html.erb within layouts/application (53.1ms)
+undefined method `pagenate' for #<#<Class:0x007f9589c726a0>:0x007f958a4ef6c0>
+Did you mean?  paginate¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:18:in `_app_views_welcome_index_html_erb___1383391791853864480_70140123411760'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:145:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:166:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:333:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:143:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:14:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:46:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:27:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:100:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/streaming.rb:217:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:83:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:32:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/renderers.rb:37:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/rendering.rb:25:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:16:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:43:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:198:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:10:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:117:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:505:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:92:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:19:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rescue.rb:29:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:137:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:30:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:196:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:237:in `block in action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:43:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `each'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:817:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:186:in `call!'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/builder.rb:63:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/flash.rb:260:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/query_cache.rb:36:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/migration.rb:377:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:88:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/reloader.rb:73:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:38:in `call_app'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:26:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/static.rb:120:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/engine.rb:518:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/application.rb:165:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendered application/error500.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 526ms (Views: 406.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:34:47 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:34:47.848308')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:34:47.848308')
+  Rendered welcome/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:34:47 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:34:47 +0900
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 09:34:47 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 09:34:48 +0900
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:34:54 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 120ms (Views: 69.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:35:22 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MgsNw2wQGPrdo9nhBhMMGMFnXDVFfQfHbADahCfouRb/rkQU4DSuGAB96+7MyBYHCJg/FyYMrilsFl4yYKUQlQ==", "event"=>{"name"=>"test001", "place"=>"東京", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"34", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"30", "end_time(4i)"=>"09", "end_time(5i)"=>"34", "content"=>"test001"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test001"], ["place", "東京"], ["content", "test001"], ["start_time", "2016-10-29 00:34:00.000000"], ["end_time", "2016-10-30 00:34:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:35:22.345082"], ["updated_at", "2016-09-29 00:35:22.345082"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/9
+Completed 302 Found in 14ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/events/9" for ::1 at 2016-09-29 09:35:22 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.7ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 9]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 9]]
+  Rendered events/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 89ms (Views: 67.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:35:30 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:35:30.530455')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:35:30.530455')
+  Rendered welcome/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:35:40 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:36:05 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1igP7xvbQSLaDt1ZmsoYAM8RH5tXy2te9lZSU7FJJBAbjUY4l//3wAfQ71ZQEQIfBu58uTS6wrD2QNbl9gSNkw==", "event"=>{"name"=>"ハッカソン001", "place"=>"oomiya ", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"35", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"31", "end_time(4i)"=>"09", "end_time(5i)"=>"35", "content"=>"test"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "ハッカソン001"], ["place", "oomiya "], ["content", "test"], ["start_time", "2016-10-29 00:35:00.000000"], ["end_time", "2016-10-31 00:35:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:36:05.101996"], ["updated_at", "2016-09-29 00:36:05.101996"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/10
+Completed 302 Found in 11ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/events/10" for ::1 at 2016-09-29 09:36:05 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (1.0ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 10]]
+  Rendered events/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 74ms (Views: 67.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:36:08 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:36:08.810254')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:36:08.810254')
+  Rendered welcome/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:36:10 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:36:43 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gw3BXR+yDBLz2MNvnb8WdW0Rnt+TJvcwuNRqKQN06uPWqIiKk5a68C4G8WBXZAxqpO79/fBXXt64wu6fRDlDYA==", "event"=>{"name"=>"ハッカソン東京", "place"=>"東京", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"36", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"31", "end_time(4i)"=>"09", "end_time(5i)"=>"36", "content"=>"test"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "ハッカソン東京"], ["place", "東京"], ["content", "test"], ["start_time", "2016-10-29 00:36:00.000000"], ["end_time", "2016-10-31 00:36:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:36:43.534594"], ["updated_at", "2016-09-29 00:36:43.534594"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/11
+Completed 302 Found in 12ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/events/11" for ::1 at 2016-09-29 09:36:43 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 11]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 11]]
+  Rendered events/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 72ms (Views: 66.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:36:48 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:37:12 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2acbuaAYp272l2r0Ov7b2msF5Y5Np5N5PjI6ljT4kygUAlJuLDwRjCtJWPvwJcHFovqGrC7WOpc+JL4gc7U6qw==", "event"=>{"name"=>"test2", "place"=>"大宮", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"36", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"30", "end_time(4i)"=>"09", "end_time(5i)"=>"36", "content"=>"てst"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test2"], ["place", "大宮"], ["content", "てst"], ["start_time", "2016-10-29 00:36:00.000000"], ["end_time", "2016-10-30 00:36:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:37:12.387112"], ["updated_at", "2016-09-29 00:37:12.387112"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/12
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/events/12" for ::1 at 2016-09-29 09:37:12 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 12]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 12]]
+  Rendered events/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:37:16 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:37:36 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vpekZNyKevUCQyhE/G6RRG5X0sE4ZO6nt4zq5LCSgP1zMu2zUK7MF9+dGks2tYtbp6ix41sVR0m3mm5S998pfg==", "event"=>{"name"=>"ハッカソン", "place"=>"東京", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"37", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"31", "end_time(4i)"=>"09", "end_time(5i)"=>"37", "content"=>"てst"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "ハッカソン"], ["place", "東京"], ["content", "てst"], ["start_time", "2016-11-29 00:37:00.000000"], ["end_time", "2016-12-01 00:37:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:37:37.001980"], ["updated_at", "2016-09-29 00:37:37.001980"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/13
+Completed 302 Found in 12ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/events/13" for ::1 at 2016-09-29 09:37:37 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 13]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 13]]
+  Rendered events/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:37:49 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:38:05 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yw4Ru8Db886O27BHz3YakkBoLdoAsXxIaahCh8l/Ni6uq1hsTP9FLFMFgkgFrQCNiZdO+GPA1aZpvsYxjjKfrQ==", "event"=>{"name"=>"ハッカソン", "place"=>"大宮", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"37", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"30", "end_time(4i)"=>"09", "end_time(5i)"=>"37", "content"=>"テスト"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "ハッカソン"], ["place", "大宮"], ["content", "テスト"], ["start_time", "2016-11-29 00:37:00.000000"], ["end_time", "2016-11-30 00:37:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:38:05.872754"], ["updated_at", "2016-09-29 00:38:05.872754"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/14
+Completed 302 Found in 11ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/events/14" for ::1 at 2016-09-29 09:38:05 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 14]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 14]]
+  Rendered events/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:38:07 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:38:07.763535')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:38:07.763535')
+  Rendered welcome/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:38:17 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 52ms (Views: 48.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:38:37 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AILM2SnhyxD2ax7MiFp095al2B6pMtS3dhvg7AD7sCbNJ4UOpcV98iu1LMNCgW7oX1q7PMpDfVl2DWRaR7YZpQ==", "event"=>{"name"=>"・テスト", "place"=>"東京", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"38", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"31", "end_time(4i)"=>"09", "end_time(5i)"=>"38", "content"=>"test"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "・テスト"], ["place", "東京"], ["content", "test"], ["start_time", "2016-10-29 00:38:00.000000"], ["end_time", "2016-10-31 00:38:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:38:37.212255"], ["updated_at", "2016-09-29 00:38:37.212255"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/15
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/events/15" for ::1 at 2016-09-29 09:38:37 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 15]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.3ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 15]]
+  Rendered events/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 77ms (Views: 72.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:38:40 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:38:40.144620')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:38:40.144620')
+  Rendered welcome/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 09:38:42 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 09:39:00 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w3XHnOPkYamcbNlThV+mt+QuJ7rK5i7EpEiocr/AvGMO0I5Lb8DXS0Gy61xPhLyoLdFEmKmXhyqkXizE+I0V4A==", "event"=>{"name"=>"test33", "place"=>"大宮", "start_time(1i)"=>"2016", "start_time(2i)"=>"12", "start_time(3i)"=>"29", "start_time(4i)"=>"09", "start_time(5i)"=>"38", "end_time(1i)"=>"2016", "end_time(2i)"=>"12", "end_time(3i)"=>"31", "end_time(4i)"=>"09", "end_time(5i)"=>"38", "content"=>"テスト"}, "commit"=>"作成"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test33"], ["place", "大宮"], ["content", "テスト"], ["start_time", "2016-12-29 00:38:00.000000"], ["end_time", "2016-12-31 00:38:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 00:39:00.974426"], ["updated_at", "2016-09-29 00:39:00.974426"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/16
+Completed 302 Found in 10ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/events/16" for ::1 at 2016-09-29 09:39:00 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 16]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.3ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 16]]
+  Rendered events/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 52ms (Views: 46.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:39:03 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:39:03.629296')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:39:03.629296')
+  Rendered welcome/index.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?page=2" for ::1 at 2016-09-29 09:39:31 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:39:31.762838')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 10[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:39:31.762838')
+  Rendered welcome/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:39:35 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:39:35.301451')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:39:35.301451')
+  Rendered welcome/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 78ms (Views: 73.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 09:40:14 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (start_time > '2016-09-29 00:40:14.309792')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE (start_time > '2016-09-29 00:40:14.309792')
+  Rendered welcome/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 80ms (Views: 72.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 09:40:14 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 10:07:08 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.7ms)[0m  SELECT  DISTINCT "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:07:08.927468')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  Rendered welcome/index.html.erb within layouts/application (55.4ms)
+undefined local variable or method `now' for #<#<Class:0x007ffde16ced28>:0x007ffde16c4530>¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:13:in `block in _app_views_welcome_index_html_erb___960272211373372458_70364192568220'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:38:in `block in capture'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:38:in `capture'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/form_helper.rb:444:in `form_for'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/ransack-1.8.2/lib/ransack/helpers/form_helper.rb:34:in `search_form_for'¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:5:in `_app_views_welcome_index_html_erb___960272211373372458_70364192568220'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:145:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:166:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:333:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:143:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:14:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:46:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:27:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:100:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/streaming.rb:217:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:83:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:32:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/renderers.rb:37:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/rendering.rb:25:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:16:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:43:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:198:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:10:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:117:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:505:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:92:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:19:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rescue.rb:29:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:137:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:30:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:196:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:237:in `block in action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:43:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `each'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:817:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:186:in `call!'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/builder.rb:63:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/flash.rb:260:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/query_cache.rb:36:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/migration.rb:377:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:88:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/reloader.rb:73:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:38:in `call_app'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:26:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/static.rb:120:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/engine.rb:518:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/application.rb:165:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendered application/error500.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 505ms (Views: 377.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:07:09 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 10:12:11 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.8ms)[0m  SELECT  DISTINCT "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:12:11.156991')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  Rendered welcome/index.html.erb within layouts/application (62.6ms)
+undefined local variable or method `now' for #<#<Class:0x007fde96f6c468>:0x007fde96f5dc10>¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:13:in `block in _app_views_welcome_index_html_erb__3213555901339698903_70296995900840'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:38:in `block in capture'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:38:in `capture'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/form_helper.rb:444:in `form_for'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/ransack-1.8.2/lib/ransack/helpers/form_helper.rb:34:in `search_form_for'¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:5:in `_app_views_welcome_index_html_erb__3213555901339698903_70296995900840'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:145:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:166:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:333:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:143:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:14:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:46:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:27:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:100:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/streaming.rb:217:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:83:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:32:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/renderers.rb:37:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/rendering.rb:25:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:16:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:43:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:198:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:10:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:117:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:505:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:92:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:19:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rescue.rb:29:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:137:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:30:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:196:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:237:in `block in action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:43:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `each'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:817:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:186:in `call!'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/builder.rb:63:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/flash.rb:260:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/query_cache.rb:36:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/migration.rb:377:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:88:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/reloader.rb:73:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:38:in `call_app'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:26:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/static.rb:120:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/engine.rb:518:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/application.rb:165:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendered application/error500.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 554ms (Views: 413.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:12:11 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 10:15:07 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.6ms)[0m  SELECT  DISTINCT "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:15:07.269547')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  Rendered welcome/index.html.erb within layouts/application (64.2ms)
+undefined local variable or method `now' for #<#<Class:0x007fc66f9db0b0>:0x007fc66f9d0908>¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:13:in `block in _app_views_welcome_index_html_erb___3899316056671369080_70245126231640'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:38:in `block in capture'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/capture_helper.rb:38:in `capture'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/helpers/form_helper.rb:444:in `form_for'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/ransack-1.8.2/lib/ransack/helpers/form_helper.rb:34:in `search_form_for'¥n/Users/user/git/awesome_events/app/views/welcome/index.html.erb:5:in `_app_views_welcome_index_html_erb___3899316056671369080_70245126231640'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:145:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:166:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:333:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/template.rb:143:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:52:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/template_renderer.rb:14:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:46:in `render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/renderer/renderer.rb:27:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:100:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/streaming.rb:217:in `_render_template'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:83:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:32:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/renderers.rb:37:in `render_to_body'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/rendering.rb:25:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:16:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/core_ext/benchmark.rb:12:in `ms'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:44:in `block in render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:43:in `render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:198:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rendering.rb:10:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:20:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:117:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:505:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:92:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/callbacks.rb:19:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rescue.rb:29:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `block in instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/notifications.rb:164:in `instrument'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/abstract_controller/base.rb:137:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionview-4.2.7.1/lib/action_view/rendering.rb:30:in `process'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:196:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_controller/metal.rb:237:in `block in action'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:74:in `dispatch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:43:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:43:in `block in serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `each'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/journey/router.rb:30:in `serve'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/routing/route_set.rb:817:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:186:in `call!'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/strategy.rb:164:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/omniauth-1.3.1/lib/omniauth/builder.rb:63:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/etag.rb:24:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/conditionalget.rb:25:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/flash.rb:260:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/cookies.rb:560:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/query_cache.rb:36:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activerecord-4.2.7.1/lib/active_record/migration.rb:377:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:88:in `__run_callbacks__'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:778:in `_run_call_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/callbacks.rb:81:in `run_callbacks'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/reloader.rb:73:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:28:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `catch'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:38:in `call_app'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `block in call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:26:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/tagged_logging.rb:68:in `tagged'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/rack/logger.rb:20:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/methodoverride.rb:22:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/runtime.rb:18:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.7.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/static.rb:120:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/sendfile.rb:113:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/engine.rb:518:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.7.1/lib/rails/application.rb:165:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/lock.rb:17:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/rack-1.6.4/lib/rack/handler/webrick.rb:88:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'¥n/Users/user/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendered application/error500.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 528ms (Views: 383.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:15:07 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 10:18:30 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT  DISTINCT "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:18:30.049445')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT COUNT(DISTINCT "events"."id") FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:18:30.049445')
+  Rendered welcome/index.html.erb within layouts/application (106.4ms)
+Completed 200 OK in 142ms (Views: 136.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:18:30 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Bname_cont%5D=%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3&q%5Bstart_time_gteq%281i%29%5D=2016&q%5Bstart_time_gteq%282i%29%5D=9&q%5Bstart_time_gteq%283i%29%5D=29&q%5Bstart_time_gteq%284i%29%5D=10&q%5Bstart_time_gteq%285i%29%5D=18&commit=%E6%A4%9C%E7%B4%A2" for ::1 at 2016-09-29 10:19:23 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"ハッカソン", "start_time_gteq(1i)"=>"2016", "start_time_gteq(2i)"=>"9", "start_time_gteq(3i)"=>"29", "start_time_gteq(4i)"=>"10", "start_time_gteq(5i)"=>"18"}, "commit"=>"検索"}
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  DISTINCT "events".* FROM "events" WHERE ("events"."name" LIKE '%ハッカソン%' AND "events"."start_time" >= '2016-09-29 01:18:00.000000')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DISTINCT COUNT(DISTINCT "events"."id") FROM "events" WHERE ("events"."name" LIKE '%ハッカソン%' AND "events"."start_time" >= '2016-09-29 01:18:00.000000')
+  Rendered welcome/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 47ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 10:22:21 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  DISTINCT "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:22:21.868143')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DISTINCT COUNT(DISTINCT "events"."id") FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:22:21.868143')
+  Rendered welcome/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:22:21 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:22:21 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:22:21 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:22:21 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:22:22 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Bname_cont%5D=%E6%9D%B1%E4%BA%AC&q%5Bstart_time_gteq%281i%29%5D=2016&q%5Bstart_time_gteq%282i%29%5D=9&q%5Bstart_time_gteq%283i%29%5D=29&commit=%E6%A4%9C%E7%B4%A2" for ::1 at 2016-09-29 10:23:18 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"東京", "start_time_gteq(1i)"=>"2016", "start_time_gteq(2i)"=>"9", "start_time_gteq(3i)"=>"29"}, "commit"=>"検索"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  DISTINCT "events".* FROM "events" WHERE ("events"."name" LIKE '%東京%' AND "events"."start_time" >= '2016-09-28 15:00:00.000000')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT COUNT(DISTINCT "events"."id") FROM "events" WHERE ("events"."name" LIKE '%東京%' AND "events"."start_time" >= '2016-09-28 15:00:00.000000')
+  Rendered welcome/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Bname_cont%5D=%E5%A4%A7%E5%AE%AE&q%5Bstart_time_gteq%281i%29%5D=2016&q%5Bstart_time_gteq%282i%29%5D=9&q%5Bstart_time_gteq%283i%29%5D=29&commit=%E6%A4%9C%E7%B4%A2" for ::1 at 2016-09-29 10:23:26 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"大宮", "start_time_gteq(1i)"=>"2016", "start_time_gteq(2i)"=>"9", "start_time_gteq(3i)"=>"29"}, "commit"=>"検索"}
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  DISTINCT "events".* FROM "events" WHERE ("events"."name" LIKE '%大宮%' AND "events"."start_time" >= '2016-09-28 15:00:00.000000')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT DISTINCT COUNT(DISTINCT "events"."id") FROM "events" WHERE ("events"."name" LIKE '%大宮%' AND "events"."start_time" >= '2016-09-28 15:00:00.000000')
+  Rendered welcome/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Bname_cont%5D=%E5%A4%A7%E5%AE%AE&q%5Bstart_time_gteq%281i%29%5D=2016&q%5Bstart_time_gteq%282i%29%5D=9&q%5Bstart_time_gteq%283i%29%5D=29&commit=%E6%A4%9C%E7%B4%A2" for ::1 at 2016-09-29 10:33:55 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"大宮", "start_time_gteq(1i)"=>"2016", "start_time_gteq(2i)"=>"9", "start_time_gteq(3i)"=>"29"}, "commit"=>"検索"}
+  [1m[36mEvent Load (0.7ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."name" LIKE '%大宮%' AND "events"."start_time" >= '2016-09-28 15:00:00.000000')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."name" LIKE '%大宮%' AND "events"."start_time" >= '2016-09-28 15:00:00.000000')
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 75ms (Views: 61.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:33:55 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 10:33:58 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:33:58.949473')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:33:58.949473')
+  Rendered welcome/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 78ms (Views: 71.2ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddEventImageToEvent (20160929013812)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "events" ADD "event_image" varchar[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160929013812"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_events_on_owner_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_events_on_owner_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tickets_on_event_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tickets_on_event_id_and_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tickets_on_user_id_and_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tickets_on_user_id_and_event_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_provider_and_uid' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_provider_and_uid' AND type='index'
+
