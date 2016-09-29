@@ -6229,3 +6229,610 @@ Migrating to AddEventImageToEvent (20160929013812)
             FROM sqlite_temp_master
             WHERE name='index_users_on_provider_and_uid' AND type='index'
 
+
+
+Started GET "/" for ::1 at 2016-09-29 10:48:45 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.8ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:48:45.743538')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:48:45.743538')[0m
+  Rendered welcome/index.html.erb within layouts/application (98.3ms)
+Completed 200 OK in 546ms (Views: 509.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 10:48:46 +0900
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 10:48:50 +0900
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 98ms (Views: 46.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 10:54:46 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P9ngdMEeJYoPTKNA2yvZOf78t5a3WuUv2hB5sdyc6iLyfKmjTTqTaNKSkU8R8MMmNwPUtNQrTMHaBv0Hm9FDoQ==", "event"=>{"name"=>"eventimage", "place"=>"tokyo", "event_image"=>#<ActionDispatch::Http::UploadedFile:0x007fb591369a90 @tempfile=#<Tempfile:/var/folders/cb/5rhzy8557gj69kfbzj4q2khm0000gn/T/RackMultipart20160929-47528-1dx15v7.png>, @original_filename="スクリーンショット 2016-09-29 10.53.52.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"event[event_image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2016-09-29 10.53.52.png\"\r\nContent-Type: image/png\r\n">, "event_image_cache"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"9", "start_time(3i)"=>"30", "start_time(4i)"=>"10", "start_time(5i)"=>"48", "end_time(1i)"=>"2016", "end_time(2i)"=>"9", "end_time(3i)"=>"31", "end_time(4i)"=>"10", "end_time(5i)"=>"48", "content"=>"test"}, "commit"=>"作成"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: event_image, event_image_cache
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "events" ("name", "place", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "eventimage"], ["place", "tokyo"], ["content", "test"], ["start_time", "2016-09-30 01:48:00.000000"], ["end_time", "2016-10-01 01:48:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 01:54:46.829545"], ["updated_at", "2016-09-29 01:54:46.829545"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/17
+Completed 302 Found in 14ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/events/17" for ::1 at 2016-09-29 10:54:46 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 17]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.6ms)[0m  [1mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1[0m  [["user_id", 2], ["event_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.3ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC[0m  [["event_id", 17]]
+  Rendered events/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 78ms (Views: 65.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 10:54:55 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:54:56.000141')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 01:54:56.000141')[0m
+  Rendered welcome/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 69ms (Views: 65.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/events/17" for ::1 at 2016-09-29 10:55:06 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 17]]
+  Rendered events/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/17/edit" for ::1 at 2016-09-29 10:55:08 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1  [["owner_id", 2], ["id", 17]]
+  Rendered events/edit.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/events/17" for ::1 at 2016-09-29 10:55:32 +0900
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QwpxGSGJBEL6RAUiaT61HOY4JvtVNLx5iV6xLnGBwfKOrzjOra2yoCeaNy2j5a8DL8dF2TZFFZeJSDWYNsxocQ==", "event"=>{"name"=>"eventimage", "place"=>"tokyo", "event_image"=>#<ActionDispatch::Http::UploadedFile:0x007fb58ff9e718 @tempfile=#<Tempfile:/var/folders/cb/5rhzy8557gj69kfbzj4q2khm0000gn/T/RackMultipart20160929-47528-1xfuji.png>, @original_filename="スクリーンショット 2016-09-29 10.53.52.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"event[event_image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2016-09-29 10.53.52.png\"\r\nContent-Type: image/png\r\n">, "event_image_cache"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"9", "start_time(3i)"=>"30", "start_time(4i)"=>"10", "start_time(5i)"=>"48", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"1", "end_time(4i)"=>"10", "end_time(5i)"=>"48", "content"=>"test"}, "commit"=>"更新", "id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1  [["owner_id", 2], ["id", 17]]
+Unpermitted parameters: event_image, event_image_cache
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/17
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/events/17" for ::1 at 2016-09-29 10:55:32 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 17]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1[0m  [["user_id", 2], ["event_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC[0m  [["event_id", 17]]
+  Rendered events/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/17/edit" for ::1 at 2016-09-29 10:57:20 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1[0m  [["owner_id", 2], ["id", 17]]
+  Rendered events/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/17/edit" for ::1 at 2016-09-29 11:00:56 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1[0m  [["owner_id", 2], ["id", 17]]
+  Rendered events/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 11:00:56 +0900
+
+
+Started GET "/events/17/edit" for ::1 at 2016-09-29 11:00:59 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1[0m  [["owner_id", 2], ["id", 17]]
+  Rendered events/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 11:00:59 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 11:01:14 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:01:14.432385')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:01:14.432385')[0m
+  Rendered welcome/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 71ms (Views: 66.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/17" for ::1 at 2016-09-29 11:01:16 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 17]]
+  Rendered events/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 49ms (Views: 43.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/17/edit" for ::1 at 2016-09-29 11:01:21 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1  [["owner_id", 2], ["id", 17]]
+  Rendered events/edit.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/events/17" for ::1 at 2016-09-29 11:01:30 +0900
+Processing by EventsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1kHy/Tdmw7pcPEeXeEgPcMUapkP2YjzZrsfQbNSdLI4b5Lsqu0J1WIHidZiykxVvDOXFYZUTlTeu0VTak9CFDQ==", "event"=>{"name"=>"eventimage", "place"=>"tokyo", "event_image"=>#<ActionDispatch::Http::UploadedFile:0x007fb58ff8c9c8 @tempfile=#<Tempfile:/var/folders/cb/5rhzy8557gj69kfbzj4q2khm0000gn/T/RackMultipart20160929-47528-134syit.png>, @original_filename="スクリーンショット 2016-09-29 10.53.52.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"event[event_image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2016-09-29 10.53.52.png\"\r\nContent-Type: image/png\r\n">, "event_image_cache"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"9", "start_time(3i)"=>"30", "start_time(4i)"=>"10", "start_time(5i)"=>"48", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"1", "end_time(4i)"=>"10", "end_time(5i)"=>"48", "content"=>"test"}, "commit"=>"更新", "id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mEvent Load (0.1ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1  [["owner_id", 2], ["id", 17]]
+Unpermitted parameters: event_image, event_image_cache
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/17
+Completed 302 Found in 8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/events/17" for ::1 at 2016-09-29 11:01:30 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 17]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1[0m  [["user_id", 2], ["event_id", 17]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC[0m  [["event_id", 17]]
+  Rendered events/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 11:06:31 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:06:31.951495')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:06:31.951495')[0m
+  Rendered welcome/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 73ms (Views: 63.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/17" for ::1 at 2016-09-29 11:06:40 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 17]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 17]]
+  Rendered events/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 92ms (Views: 53.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 11:12:45 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 79ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 11:13:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:13:01.597640')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:13:01.597640')[0m
+  Rendered welcome/index.html.erb within layouts/application (105.9ms)
+Completed 200 OK in 543ms (Views: 509.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 11:13:02 +0900
+
+
+Started GET "/events/new" for ::1 at 2016-09-29 11:13:04 +0900
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 103ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/events" for ::1 at 2016-09-29 11:13:55 +0900
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L30ttAGtaEZplVO99W3heTrybq5F/PJcy+Dc47qmJNbi2GRjjYnepLRLYbI/tvtm8w0NjCaNW7LL9lhV/euNVQ==", "event"=>{"name"=>"画像テスト", "place"=>"・テスト", "event_image"=>#<ActionDispatch::Http::UploadedFile:0x007f9172868cc8 @tempfile=#<Tempfile:/var/folders/cb/5rhzy8557gj69kfbzj4q2khm0000gn/T/RackMultipart20160929-47605-1j3zd85.png>, @original_filename="スクリーンショット 2016-09-29 10.53.52.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"event[event_image]\"; filename=\"\xE3\x82\xB9\xE3\x82\xAF\xE3\x83\xAA\xE3\x83\xBC\xE3\x83\xB3\xE3\x82\xB7\xE3\x83\xA7\xE3\x83\x83\xE3\x83\x88 2016-09-29 10.53.52.png\"\r\nContent-Type: image/png\r\n">, "event_image_cache"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"10", "start_time(3i)"=>"29", "start_time(4i)"=>"11", "start_time(5i)"=>"13", "end_time(1i)"=>"2016", "end_time(2i)"=>"10", "end_time(3i)"=>"31", "end_time(4i)"=>"11", "end_time(5i)"=>"13", "content"=>"test"}, "commit"=>"作成"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("name", "place", "event_image", "content", "start_time", "end_time", "owner_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "画像テスト"], ["place", "・テスト"], ["event_image", "__________2016-09-29_10.53.52.png"], ["content", "test"], ["start_time", "2016-10-29 02:13:00.000000"], ["end_time", "2016-10-31 02:13:00.000000"], ["owner_id", 2], ["created_at", "2016-09-29 02:13:55.130394"], ["updated_at", "2016-09-29 02:13:55.130394"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/events/18
+Completed 302 Found in 29ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/events/18" for ::1 at 2016-09-29 11:13:55 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1[0m  [["user_id", 2], ["event_id", 18]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.2ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC[0m  [["event_id", 18]]
+  Rendered events/show.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 70ms (Views: 57.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/18/edit" for ::1 at 2016-09-29 11:14:43 +0900
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1[0m  [["owner_id", 2], ["id", 18]]
+  Rendered events/edit.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 68ms (Views: 64.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-09-29 11:15:26 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.6ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:15:26.375275')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 02:15:26.375275')[0m
+  Rendered welcome/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/events/18" for ::1 at 2016-09-29 11:15:29 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mEvent Load (12.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 18]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.1ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 18]]
+  Rendered events/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 74ms (Views: 55.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/events/18" for ::1 at 2016-09-29 11:17:34 +0900
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mEvent Load (7.6ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 18]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.1ms)[0m  [1mSELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1[0m  [["user_id", 2], ["event_id", 18]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTicket Load (0.2ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC[0m  [["event_id", 18]]
+  Rendered events/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 65ms (Views: 53.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 11:17:34 +0900
+
+
+Started GET "/events/18" for ::1 at 2016-09-29 14:40:31 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mEvent Load (0.6ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.6ms)[0m  SELECT  "tickets".* FROM "tickets" WHERE "tickets"."user_id" = ? AND "tickets"."event_id" = ? LIMIT 1  [["user_id", 2], ["event_id", 18]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTicket Load (0.2ms)[0m  SELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = ?  ORDER BY "tickets"."created_at" ASC  [["event_id", 18]]
+  Rendered events/show.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 584ms (Views: 485.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/bootstrap.min.self-511807f34f490c5d04f397a2ad4fc4a9135fcb5300f3dd5cb88f1cf678357cf3.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/tickets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/tickets.self-f464c854827b88b6df5693111d1276aa359da6996959ca704d053b9b881f63d0.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/assets/bootstrap.min.self-504d59678f10d79a661b6cecdce5b8c1d5bfd98e860614584c0a40399552d61f.js?body=1" for ::1 at 2016-09-29 14:40:32 +0900
+
+
+Started GET "/" for ::1 at 2016-09-29 14:40:39 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:40:39.168261')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-09-29 05:40:39.168261')
+  Rendered welcome/index.html.erb within layouts/application (94.5ms)
+Completed 200 OK in 132ms (Views: 127.7ms | ActiveRecord: 0.6ms)

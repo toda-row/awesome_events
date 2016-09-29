@@ -1,5 +1,7 @@
 class Event < ActiveRecord::Base
 
+	mount_uploader :event_image, EventImageUploader
+
 	has_many :tickets, dependent: :destroy
 	belongs_to :owner, class_name: 'User'
 
