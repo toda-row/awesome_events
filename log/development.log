@@ -6946,3 +6946,84 @@ Processing by EventsController#edit as HTML
   [1m[36mEvent Load (1.0ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."owner_id" = ? AND "events"."id" = ? LIMIT 1[0m  [["owner_id", 2], ["id", 18]]
   Rendered events/edit.html.erb within layouts/application (14.0ms)
 Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 15:58:38 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.8ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:58:39.013654')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:58:39.013654')[0m
+  Rendered welcome/index.html.erb within layouts/application (104.5ms)
+Completed 200 OK in 609ms (Views: 559.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/logout" for ::1 at 2016-10-02 15:59:04 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 15:59:04 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:59:04.109835')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:59:04.109835')[0m
+  Rendered welcome/index.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 137ms (Views: 131.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/auth/twitter" for ::1 at 2016-10-02 15:59:07 +0900
+
+
+Started GET "/auth/twitter" for ::1 at 2016-10-02 15:59:08 +0900
+
+
+Started GET "/auth/twitter/callback?oauth_token=poXR9wAAAAAAxJl8AAABV4QwaCA&oauth_verifier=2yDulcDlh2jSYhEpNLyHPi4qBwMcsR8D" for ::1 at 2016-10-02 15:59:10 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"poXR9wAAAAAAxJl8AAABV4QwaCA", "oauth_verifier"=>"2yDulcDlh2jSYhEpNLyHPi4qBwMcsR8D", "provider"=>"twitter"}
+  [1m[35mUser Load (2.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? LIMIT 1  [["provider", "twitter"], ["uid", "2477043068"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 57ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 15:59:11 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:59:11.290743')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:59:11.290743')
+  Rendered welcome/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 108ms (Views: 102.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/new" for ::1 at 2016-10-02 15:59:15 +0900
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 91ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 15:59:24 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:59:24.482072')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-10-02 06:59:24.482072')[0m
+  Rendered welcome/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 69ms (Views: 63.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/new" for ::1 at 2016-10-02 16:01:05 +0900
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered events/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 58ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 16:02:19 +0900
+Processing by WelcomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE ("events"."start_time" >= '2016-10-02 07:02:19.632798')  ORDER BY "events"."start_time" ASC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events"."start_time" >= '2016-10-02 07:02:19.632798')
+  Rendered welcome/index.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "users" ("provider", "uid", "nickname", "image_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["provider", "twitter"], ["uid", "uid1"], ["nickname", "nickname1"], ["image_url", "http://example.com/image1.jpg"], ["created_at", "2016-10-03 07:04:01.368216"], ["updated_at", "2016-10-03 07:04:01.368216"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("owner_id", "name", "place", "content", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["owner_id", 3], ["name", "イベント名1"], ["place", "イベント開催場所1"], ["content", "イベント本文1"], ["start_time", "2016-10-25 07:04:01.387760"], ["end_time", "2016-10-25 14:04:01.387760"], ["created_at", "2016-10-03 07:04:01.393794"], ["updated_at", "2016-10-03 07:04:01.393794"]]
+  [1m[35m (1.0ms)[0m  commit transaction
